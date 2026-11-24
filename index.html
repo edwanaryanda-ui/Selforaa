@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selfora – Kenali dan Terima Dirimu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#/home" class="brand" data-go="home">
+    <img class="logo" src="logo-sm.png" alt="Logo BK" width="40" height="40">
+    <span class="app-name">Selfora</span>
+  </a>
+  <button id="menuBtn" aria-label="Buka menu" aria-expanded="false">☰</button>
+  <nav id="menu">
+    <button data-go="home">Beranda</button>
+    <button data-go="about">Tentang <span class="app-name">Selfora</span></button>
+    <button data-go="materi" data-role="mahasiswa">Materi</button>
+    <button data-go="refleksi" data-role="mahasiswa">Refleksi Diri</button>
+    <button data-go="jurnal" data-role="mahasiswa">Jurnal</button>
+    <button data-go="umpanbalik" data-role="mahasiswa">Ruang Umpan Balik <span class="dot" id="fbDot" hidden></span></button>
+    <button data-go="bantuan">Bantuan</button>
+    <button data-go="dashboard" id="dashBtn" hidden>Dashboard</button>
+    <button class="btn small" id="authBtn" data-act="auth">Masuk</button>
+  </nav>
+</header>
+
+<main id="app">
+
+<!-- BERANDA -->
+<section class="view" id="view-home">
+  <div class="hero">
+    <video class="bgv" autoplay muted loop playsinline src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260325_120549_0cd82c36-56b3-4dd9-b190-069cfc3a623f.mp4"></video><div class="hero-ov"></div>
+    <i class="blob b1"></i><i class="blob b2"></i>
+    <div class="wrap">
+    <div>
+      <img class="logo hero-logo" src="logo.png" alt="Logo BK" width="84" height="84">
+      <span class="eyebrow fade">Ruang aman untuk mahasiswa</span>
+      <h1 class="fade" style="--d:.1s">Pelan-pelan, <span class="si">Terima</span> Dirimu</h1>
+      <p class="sub fade" style="--d:.2s"><span class="app-name">Selfora</span> adalah ruang edukasi dan refleksi diri berbasis Bimbingan dan Konseling, untuk mengenal diri, menerima kekurangan, dan merasa lebih puas dengan hidupmu.</p>
+      <div class="row fade" style="--d:.3s"><button class="btn" data-act="start">Mulai perjalanan</button><button class="btn navy" data-go="about">Pelajari</button></div>
+    </div>
+    <div class="hex-art fade" style="--d:.2s" aria-hidden="true">
+      <div class="hex a">🪞</div><div class="hex b">🌱</div><div class="hex c">✨</div>
+      <div class="tag"><b>5</b>materi<br>self-acceptance</div>
+    </div>
+  </div></div>
+
+  <div class="marq" aria-hidden="true"><div class="track"><span>Mengenal diri</span><span>Menerima kekurangan</span><span>Menghargai kelebihan</span><span>Berdamai dengan perbandingan</span><span>Bersyukur setiap hari</span><span>Mengenal diri</span><span>Menerima kekurangan</span><span>Menghargai kelebihan</span><span>Berdamai dengan perbandingan</span><span>Bersyukur setiap hari</span></div></div>
+
+  <div class="sec dots"><div class="wrap">
+    <div class="sec-h fade"><span class="eyebrow">Layanan kami</span><h2>Semua yang kamu perlukan untuk mengenal diri</h2><p>Materi, refleksi, jurnal, dan konselor BK dalam satu tempat.</p></div>
+    <div class="cards5">
+      <div class="svc fade"><div class="ico">📚</div><h3>Materi</h3><p>Lima materi self-acceptance dengan contoh dan pertanyaan refleksi.</p><button class="more" data-go="materi" data-role="mahasiswa">Selengkapnya</button></div>
+      <div class="svc fade" style="--d:.08s"><div class="ico">🌤️</div><h3>Refleksi harian</h3><p>Check-in perasaan, pengalaman, dan hal yang disyukuri.</p><button class="more" data-go="refleksi" data-role="mahasiswa">Selengkapnya</button></div>
+      <div class="svc fade" style="--d:.16s"><div class="ico">📓</div><h3>Jurnal pribadi</h3><p>Catatan yang hanya bisa dibaca oleh pemiliknya.</p><button class="more" data-go="jurnal" data-role="mahasiswa">Selengkapnya</button></div>
+      <div class="svc fade" style="--d:.24s"><div class="ico">💬</div><h3>Ruang Umpan Balik</h3><p>Bertanya dan meminta arahan langsung ke konselor BK.</p><button class="more" data-go="umpanbalik" data-role="mahasiswa">Selengkapnya</button></div>
+      <div class="svc on fade" style="--d:.32s"><div class="ico">🤝</div><h3>Bantuan</h3><p>Informasi layanan konseling dan kontak saat kamu membutuhkannya.</p><button class="more" data-go="bantuan">Selengkapnya</button></div>
+    </div>
+  </div></div>
+
+  <div class="sec tint"><div class="wrap">
+    <div class="sec-h fade"><span class="eyebrow">Mengapa Selfora</span><h2>Tekanan sudah berubah. Kamu juga boleh.</h2><p>Media sosial, tuntutan akademik, dan ekspektasi sekitar membuat banyak mahasiswa merasa belum cukup.</p></div>
+    <div class="cards3">
+      <div class="card fade"><div class="ico">📱</div><h3>Perbandingan sosial</h3><p>Membandingkan sorotan hidup orang lain dengan keseharianmu.</p></div>
+      <div class="card fade" style="--d:.1s"><div class="ico">🎓</div><h3>Tekanan akademik</h3><p>Takut gagal dan merasa harus selalu sempurna.</p></div>
+      <div class="card fade" style="--d:.2s"><div class="ico">🌫️</div><h3>Rasa belum cukup</h3><p>Sulit puas dengan apa yang sudah kamu capai.</p></div>
+    </div>
+  </div></div>
+
+  <div class="sec"><div class="wrap feat">
+    <video class="vid fade" autoplay muted loop playsinline src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260325_132944_a0d124bb-eaa1-4082-aa30-2310efb42b4b.mp4"></video>
+    <div class="fade" style="--d:.15s"><span class="eyebrow">Solusi</span><h2>Platform untuk <span class="si">penerimaan</span> diri</h2><p class="muted" style="font-size:1rem">Kami membangun ruang di mana rasa ingin tahu bertemu kejernihan: tempat mahasiswa mengenal diri, menerima kekurangan, dan menghargai hidupnya, dengan lebih sedikit tekanan dan lebih banyak makna.</p><div class="row"><button class="btn" data-go="about">Tentang Selfora</button></div></div>
+  </div></div>
+
+  <div class="sec" style="padding-top:0"><div class="wrap"><video class="vid wide fade" autoplay muted loop playsinline src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260325_125119_8e5ae31c-0021-4396-bc08-f7aebeb877a2.mp4"></video></div></div>
+
+  <div class="sec"><div class="wrap"><div class="band fade">
+    <h2>Mulai dari langkah kecil, setiap hari</h2>
+    <div class="nums"><div><b data-count="5">5</b><span>Materi self-acceptance</span></div><div><b data-count="3">3</b><span>Pertanyaan refleksi per materi</span></div><div><b data-count="100"  data-suf="%">100%</b><span>Jurnal pribadi, hanya kamu yang baca</span></div><div><b>Gratis</b><span>Untuk mahasiswa</span></div></div>
+  </div></div></div>
+
+  <div class="cta">
+    <video id="ctaVideo" class="bgv" autoplay muted loop playsinline></video><div class="cta-ov"></div>
+    <div class="cta-in"><div class="logo-wrap fade"><img class="logo big" src="logo.png" alt="Logo BK" width="96" height="96"></div>
+    <h2 class="fade" style="--d:.1s">Mulai perjalananmu hari ini</h2>
+    <p class="fade" style="--d:.2s">Gratis untuk mahasiswa. Mulai dari satu langkah kecil.</p>
+    <div class="row fade" style="--d:.3s"><button class="btn" data-act="start">Daftar sekarang</button><button class="btn glass" data-go="about">Pelajari lebih lanjut</button></div>
+  </div></div>
+</section>
+
+<!-- TENTANG -->
+<section class="view" id="view-about" hidden>
+  <h2>Tentang <span class="app-name">Selfora</span></h2>
+  <p class="lead">Banyak mahasiswa merasa kurang puas dengan diri dan hidupnya: membandingkan diri dengan teman, takut gagal, atau merasa belum cukup. <span class="app-name">Selfora</span> hadir sebagai teman belajar untuk menumbuhkan penerimaan diri (<em>self-acceptance</em>).</p>
+  <div class="grid3">
+    <article class="card"><h3>Mengenal diri</h3><p>Memahami nilai, perasaan, dan kebiasaan yang membentuk dirimu.</p></article>
+    <article class="card"><h3>Menerima diri</h3><p>Berdamai dengan kekurangan tanpa berhenti bertumbuh.</p></article>
+    <article class="card"><h3>Menghargai hidup</h3><p>Melihat hal baik yang sudah ada, bukan hanya yang belum tercapai.</p></article>
+  </div>
+  <p class="note-box"><span class="app-name">Selfora</span> adalah media edukasi, bukan pengganti layanan konseling atau psikolog profesional.</p>
+</section>
+
+<!-- LOGIN -->
+<section class="view" id="view-login" hidden>
+  <div class="card auth">
+    <img class="logo auth-logo" src="logo.png" alt="Logo BK" width="72" height="72">
+
+    <!-- Langkah 1: pilih peran -->
+    <div id="rolePick">
+      <h2 class="auth-h">Masuk sebagai siapa?</h2>
+      <p class="auth-sub">Pilih peranmu untuk melanjutkan.</p>
+      <div class="roles">
+        <button type="button" class="role" data-pick="mahasiswa">
+          <span class="r-ico">🧑‍🎓</span><span class="r-txt"><b>Mahasiswa</b><small>Materi, refleksi, jurnal &amp; umpan balik</small></span><span class="r-arr" aria-hidden="true">›</span>
+        </button>
+        <button type="button" class="role" data-pick="konselor">
+          <span class="r-ico">🧑‍🎓</span><span class="r-txt"><b>Konselor / Dosen BK</b><small>Balas pesan &amp; kelola materi</small></span><span class="r-arr" aria-hidden="true">›</span>
+        </button>
+        <button type="button" class="role" data-pick="admin">
+          <span class="r-ico">🧑‍🎓</span><span class="r-txt"><b>Admin</b><small>Kelola akun &amp; ringkasan sistem</small></span><span class="r-arr" aria-hidden="true">›</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Langkah 2: email & kata sandi -->
+    <div id="authStep" hidden>
+      <button type="button" class="back" data-act="authBack">‹ Ganti peran</button>
+      <div class="role-badge" id="roleBadge"></div>
+      <div class="tabs" id="authTabs"><button data-tab="login" class="active">Masuk</button><button data-tab="register">Daftar</button></div>
+      <form id="authForm" novalidate>
+        <label class="reg" hidden>Nama lengkap<input id="aName" autocomplete="name"></label>
+        <label class="code" hidden>Kode registrasi konselor<input id="aCode" autocomplete="off" placeholder="Diberikan oleh admin BK"></label>
+        <label>Email<input id="aEmail" type="email" autocomplete="email" required></label>
+        <label>Kata sandi<input id="aPass" type="password" minlength="6" autocomplete="current-password" required></label>
+        <p class="error" id="authErr" role="alert"></p>
+        <button class="btn block" id="authSubmit">Masuk</button>
+      </form>
+    </div>
+
+    <div class="demo"><p>Selfora adalah media edukasi dan refleksi diri, bukan pengganti konseling profesional.</p></div>
+  </div>
+</section>
+
+<!-- DASHBOARD MAHASISWA -->
+<section class="view" id="view-dashboard" hidden></section>
+
+<!-- MATERI -->
+<section class="view" id="view-materi" hidden></section>
+
+<!-- REFLEKSI -->
+<section class="view" id="view-refleksi" hidden>
+  <h2>Refleksi Diri Harian</h2>
+  <p class="lead">Luangkan beberapa menit untuk menyapa dirimu hari ini. Catatan ini bersifat pribadi dan tidak dikirim ke konselor.</p>
+  <form class="card" id="checkinForm">
+    <p class="label">Bagaimana suasana hatimu?</p>
+    <div class="moods" id="moods"></div>
+    <label>Apa yang sedang kamu rasakan?<textarea id="cFeel" rows="3" placeholder="Contoh: Hari ini aku cemas karena presentasi…"></textarea></label>
+    <label>Apa yang kamu alami hari ini?<textarea id="cExp" rows="3" placeholder="Ceritakan kejadian yang paling berkesan."></textarea></label>
+    <label>Apa yang kamu syukuri?<textarea id="cGrat" rows="2" placeholder="Hal kecil pun berarti."></textarea></label>
+    <button class="btn">Simpan check-in</button>
+  </form>
+  <h3>Riwayat check-in</h3>
+  <div id="checkinList" class="list"></div>
+</section>
+
+<!-- JURNAL -->
+<section class="view" id="view-jurnal" hidden>
+  <h2>Jurnal Pribadi</h2>
+  <p class="lead">Tulis bebas. Hanya kamu yang dapat melihat catatan ini.</p>
+  <form class="card" id="journalForm">
+    <label>Judul<input id="jTitle" maxlength="80" placeholder="Judul catatan" required></label>
+    <label>Isi catatan<textarea id="jBody" rows="6" placeholder="Apa yang ingin kamu tuliskan?" required></textarea></label>
+    <button class="btn">Simpan catatan</button>
+  </form>
+  <h3>Catatan saya</h3>
+  <div id="journalList" class="list"></div>
+</section>
+
+<!-- BANTUAN -->
+<section class="view" id="view-bantuan" hidden>
+  <h2>Bantuan &amp; Informasi Konseling</h2>
+  <div class="grid3">
+    <article class="card"><h3>Layanan BK kampus</h3><p>Hubungi unit Bimbingan dan Konseling di kampusmu untuk jadwal konsultasi tatap muka.</p><a class="btn wa small" data-wa href="#" target="_blank" rel="noopener" hidden>Chat WhatsApp BK</a></article>
+    <article class="card"><h3>Kapan perlu bantuan?</h3><p>Saat perasaan sedih, cemas, atau lelah berlangsung lama dan mengganggu kuliah, tidur, atau hubunganmu.</p></article>
+    <article class="card warn"><h3>Dalam keadaan darurat</h3><p>Jika kamu berpikir menyakiti diri sendiri, segera hubungi orang tepercaya, layanan darurat 112, atau fasilitas kesehatan terdekat.</p></article>
+  </div>
+  <h3>Ruang Umpan Balik</h3>
+  <div class="card"><p>Pertanyaan, masukan, atau permintaan arahan dapat dikirim langsung ke konselor BK. Hanya pesan yang kamu kirim di sana yang bisa dibaca konselor.</p><button class="btn" data-go="umpanbalik">Buka Ruang Umpan Balik</button></div>
+</section>
+
+<!-- RUANG UMPAN BALIK -->
+<section class="view" id="view-umpanbalik" hidden>
+  <h2>Ruang Umpan Balik</h2>
+  <p class="lead">Kirim pertanyaan, masukan, atau minta arahan dari konselor BK. Balasan akan muncul di sini.</p>
+  <form class="card" id="fbForm">
+    <label>Kategori<select id="fbCat"><option>Pertanyaan tentang materi</option><option>Masukan untuk website</option><option>Permintaan arahan BK</option></select></label>
+    <label>Subjek<input id="fbSubj" maxlength="100" required></label>
+    <label>Isi pesan<textarea id="fbBody" rows="5" maxlength="4000" required></textarea></label>
+    <button class="btn" id="fbSend">Kirim pesan</button>
+  </form>
+  <h3>Riwayat pesan</h3>
+  <div id="fbList" class="list"></div>
+</section>
+
+<!-- DASHBOARD ADMIN -->
+<section class="view" id="view-admin" hidden></section>
+
+<!-- DASHBOARD KONSELOR -->
+<section class="view" id="view-konselor" hidden></section>
+
+</main>
+
+<footer><span>© 2026 <span class="app-name">Selfora</span>. Media edukasi dan refleksi diri, bukan pengganti konseling profesional.</span><span class="fl"><button data-go="about">Tentang</button><button data-go="bantuan">Bantuan</button></span></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script src="materi-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+<script src="script.js"></script>
+<script src="landing.js"></script>
+</body>
+</html>
